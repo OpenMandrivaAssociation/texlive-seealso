@@ -6,7 +6,7 @@
 # catalog-version 1.1
 Name:		texlive-seealso
 Version:	1.1
-Release:	1
+Release:	2
 Summary:	Improve the performance of \see macros with makeindex
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/seealso
