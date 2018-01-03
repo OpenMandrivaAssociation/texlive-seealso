@@ -1,12 +1,6 @@
-# revision 33449
-# category Package
-# catalog-ctan /macros/latex/contrib/seealso
-# catalog-date 2014-04-11 13:24:54 +0200
-# catalog-license lppl1.3
-# catalog-version 1.1
 Name:		texlive-seealso
-Version:	1.1
-Release:	4
+Version:	1.2
+Release:	1
 Summary:	Improve the performance of \see macros with makeindex
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/seealso
@@ -35,11 +29,10 @@ entries. on these indirecty.
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/tex/latex/seealso/seealso.sty
-%doc %{_texmfdistdir}/doc/latex/seealso/seealso.pdf
+%{_texmfdistdir}/tex/latex/seealso
+%doc %{_texmfdistdir}/doc/latex/seealso
 #- source
-%doc %{_texmfdistdir}/source/latex/seealso/seealso.dtx
-%doc %{_texmfdistdir}/source/latex/seealso/seealso.ins
+%doc %{_texmfdistdir}/source/latex/seealso
 
 #-----------------------------------------------------------------------
 %prep
