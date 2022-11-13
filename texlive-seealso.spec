@@ -1,13 +1,13 @@
 Name:		texlive-seealso
-Version:	1.2
-Release:	2
+Version:	43595
+Release:	1
 Summary:	Improve the performance of \see macros with makeindex
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/seealso
 License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/seealso.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/seealso.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/seealso.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/seealso.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/seealso.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/seealso.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -20,12 +20,12 @@ and to ensure page numbers are present in the actual index
 entries. on these indirecty.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -36,7 +36,8 @@ entries. on these indirecty.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
