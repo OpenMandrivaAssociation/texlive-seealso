@@ -3,7 +3,7 @@ Version:	43595
 Release:	2
 Summary:	Improve the performance of \see macros with makeindex
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/seealso
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/seealso
 License:	LPPL1.3
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/seealso.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/seealso.doc.r%{version}.tar.xz
